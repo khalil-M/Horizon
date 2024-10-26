@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct HorizonApp: App {
+    
+    @State var selectedTab: AppTab = .timeline
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        appScene
+//        WindowGroup {
+//            appScene
+//        }
+    }
+}
+
+extension HorizonApp {
+    var appScene: some Scene {
+        WindowGroup(id: "MainWindow") {
+            AppView(selectedTab: $selectedTab)
         }
     }
 }
