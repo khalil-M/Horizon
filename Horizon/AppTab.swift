@@ -9,29 +9,6 @@ import Foundation
 
 
 @MainActor
-//enum AppTab: Int, Identifiable, Hashable, CaseIterable, Codable {
-//    case timeline, notifications, mentions, explore, messages, settings, other
-//    case trending, federated, local
-//    case profile
-//    case bookmarks
-//    case favorites
-//    case post
-//    case followedTags
-//    case lists
-//    case links
-//    
-//    nonisolated var id: Int {
-//        rawValue
-//    }
-//    
-//    static func loggedOutTab() -> [AppTab] {
-//        [.timeline, .settings]
-//    }
-//    
-//    static func visionOSTab() -> [AppTab] {
-//        [.profile, .timeline, .notifications, .mentions, .explore, .post, .settings]
-//    }
-//}
 
 enum AppTab: Int, Identifiable, Hashable, CaseIterable, Codable {
     case timeline, notifications, mentions, explore, messages, settings, other
