@@ -1,4 +1,5 @@
 # Horizon
+# أَفْقٌ
 Horizon is an innovative iOS app for doctors, blending social networking with AI-powered tools for medical knowledge exchange
 # Horizon - The Collaborative Platform for Healthcare Professionals
 
