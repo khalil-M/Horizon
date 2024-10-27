@@ -4,7 +4,7 @@ Horizon is an innovative iOS app for doctors, blending social networking with AI
 
 **Horizon** is a modular, multi-platform app designed to support healthcare professionals with a collaborative space for sharing insights, discussing clinical cases, and staying updated on the latest advancements in medicine. 
 
-Dr. Elhechmi, along with his analyst team, is currently focused on refining strategy management to ensure effective implementation. Horizon will soon be available on iOS, macOS, and VisionOS, combining professional networking with advanced e-health tools that enable doctors to connect, grow, and innovate in a secure, dynamic environment.
+**Dr. Elhechmi**, along with his analyst team, is currently focused on refining strategy management to ensure effective implementation. Horizon will soon be available on iOS, macOS, and VisionOS, combining professional networking with advanced e-health tools that enable doctors to connect, grow, and innovate in a secure, dynamic environment.
 
 ---
 
