@@ -41,7 +41,7 @@ public enum SheetDestination: Identifiable, Hashable {
     public func hash(into hasher: inout Hasher) {
       hasher.combine(id)
     }
-
+    case newStatusEditor(visibility: String)
     case quoteLinkStatusEditor(link: URL)
     case listCreate
     case addAccount
@@ -58,6 +58,8 @@ public enum SheetDestination: Identifiable, Hashable {
 
     public var id: String {
       switch self {
+      case .newStatusEditor:
+          "statusEditor"
       case .listCreate:
         "listCreate"
       case .addAccount:

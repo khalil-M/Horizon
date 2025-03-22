@@ -33,7 +33,7 @@ public struct StatusEditorToolbarItem: ToolbarContent {
     ToolbarItem(placement: .navigationBarTrailing) {
       Button {
         Task { @MainActor in
-            routerPath.presentedSheet = .about
+            routerPath.presentedSheet = .newStatusEditor(visibility: "public")
         }
       } label: {
         Image(systemName: "square.and.pencil")

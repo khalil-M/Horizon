@@ -45,6 +45,9 @@ extension View {
     func withSheetDestinations(sheetDestinations: Binding<SheetDestination?>) -> some View {
       sheet(item: sheetDestinations) { destination in
         switch destination {
+        case .newStatusEditor(visibility: let visibility):
+            StatusEditor.MainView()
+//              .withEnvironments()
         case let .quoteLinkStatusEditor(link):
             EmptyView()
 //          StatusEditor.MainView(mode: .quoteLink(link: link))
