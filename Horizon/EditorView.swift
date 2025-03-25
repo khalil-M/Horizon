@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension StatusEditor {
-    
+    @MainActor
     struct EditorView: View {
        
         @State var statusText = NSMutableAttributedString(string: "Khalil produce")
@@ -35,6 +35,7 @@ extension StatusEditor {
         
          var textInput: some View {
              TextView($statusText)
+                 .placeholder(String( "Khalil is producing"))
                  .padding(.horizontal, 20)
                  .padding(.vertical)
         }

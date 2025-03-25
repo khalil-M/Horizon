@@ -24,8 +24,6 @@ extension TextView {
         func updateUIView(_: UIKitTextView, context: Context) {
             context.coordinator.textView.becomeFirstResponder()
         }
-        
-        
     }
 
   }

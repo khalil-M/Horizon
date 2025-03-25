@@ -12,6 +12,9 @@ public struct TextView: View {
     
     @Binding private var text: NSMutableAttributedString
     
+    var placeholderView: AnyView?
+    var placeholderText: String?
+    
     public init(_ text: Binding<NSMutableAttributedString>)
     {
       _text = text
@@ -20,9 +23,20 @@ public struct TextView: View {
     public var body: some View {
         Representable(text: $text)
             .frame(
-              minHeight: 100,
-              maxHeight: 300
+              minHeight: 44,
+              maxHeight: .infinity
             )
+            .accessibilityValue($text.wrappedValue.string.isEmpty ? (placeholderText ?? "Kjalilsdf") : $text.wrappedValue.string)
+            .background(
+                placeholderView?
+                  .foregroundColor(Color(.placeholderText))
+                  .multilineTextAlignment(.leading)
+                  .padding(.horizontal, 0)
+                  .padding(.vertical, 0)
+                  .opacity(1)
+                  .accessibilityHidden(true),
+                alignment: .topLeading
+              )
     }
 }
 

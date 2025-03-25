@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 class iOSTabs {
     enum TabEntries: String {
         case first, second, third, fourth, fifth

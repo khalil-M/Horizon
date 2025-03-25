@@ -12,10 +12,12 @@ extension TextView.Representable {
     final class Coordinator: NSObject, UITextViewDelegate {
         
         let textView: UIKitTextView
+        
         private var text: Binding<NSMutableAttributedString>
         
         init(text: Binding<NSMutableAttributedString>) {
             textView = UIKitTextView()
+            textView.backgroundColor = .clear
             self.text = text
         }
     }

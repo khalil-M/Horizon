@@ -10,6 +10,7 @@ import SwiftUI
 
 extension StatusEditor {
     
+    @MainActor
     struct AccessoryView: View {
         
         var body: some View {

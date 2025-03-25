@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct AppView: View {
     
     @Binding var selectedTab: AppTab

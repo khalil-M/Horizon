@@ -7,9 +7,10 @@
 
 import Foundation
 import SwiftUI
+
 extension StatusEditor {
     
-    
+    @MainActor
     struct MainView: View {
         
         public var body: some View  {
